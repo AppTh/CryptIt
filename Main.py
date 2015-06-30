@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     elif INPUT_OP == '-d':
         #file_name, ext = os.path.splitext(INPUT_FILE)
-        if os.path.splitext(INPUT_FILE)[1] != '.crpt':
+        if os.path.splitext(INPUT_FILE)[1] != '.crypt':
             print('Not a valid CryptIt-file. Aborting')
             sys.exit()
 

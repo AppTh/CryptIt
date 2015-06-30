@@ -12,7 +12,7 @@ class AESCipher(object):
     def encrypt(self, in_filename, out_filename=None, chunksize=64*1024):
 
         if not out_filename:
-            out_filename = in_filename + '.crpt'
+            out_filename = in_filename + '.crypt'
 
         iv = Random.new().read(AES.block_size)
         cipher = AES.new(self.key, AES.MODE_CBC, iv)

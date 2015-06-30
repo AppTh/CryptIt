@@ -1,2 +1,3 @@
 @echo off
-python Main.py -d %1
+chcp 1250
+python "%~dp0\Main.py" -d "%1"
