@@ -91,6 +91,7 @@ def main():
     with open (INPUT_FILE, 'r') as f:
         data = f.read()
     try:
+        # Asign tuple directly with var1, var2 = do()
         result = do[INPUT_OP](INPUT_KEY, data)
         encrypted = result[0]
         key = result[1]
