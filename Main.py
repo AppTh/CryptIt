@@ -8,10 +8,6 @@ def sysarg(i):
     except:
         return None
 
-INPUT_OP = sysarg(1)
-INPUT_FILE = sysarg(2).replace('"','')
-INPUT_KEY = sysarg(3)
-
 def encrypt(key):
 
     # if key is 0 this will fail
@@ -47,9 +43,15 @@ def decrypt(key):
     else:
         return key
 
-do = {'-e':encrypt, '-d': decrypt}
+
 
 if __name__ == '__main__':
+
+    INPUT_OP = sysarg(1)
+    INPUT_FILE = sysarg(2)
+    INPUT_KEY = sysarg(3)
+
+    do = {'-e':encrypt, '-d': decrypt}
 
     if not INPUT_OP in do:
         print('No proper MO flag, please use -e or -d. Aborting.')
