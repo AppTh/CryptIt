@@ -1,7 +1,6 @@
 # coding=utf-8
 import FileCipher
 import sys, os, getpass
-#import subprocess as sp
 
 def sysarg(i):
     try:
@@ -10,7 +9,7 @@ def sysarg(i):
         return None
 
 INPUT_OP = sysarg(1)
-INPUT_FILE = sysarg(2)
+INPUT_FILE = sysarg(2).replace('"','')
 INPUT_KEY = sysarg(3)
 
 def encrypt(key):
