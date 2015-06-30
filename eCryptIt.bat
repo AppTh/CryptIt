@@ -1,2 +1,2 @@
 @echo off
-python encrypt.py -e %1
+python Main.py -e %1

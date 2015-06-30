@@ -1,4 +1,4 @@
-# coding=UTF-8
+# coding=utf-8
 import AESCipher
 import sys, os, getpass
 import subprocess as sp
