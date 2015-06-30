@@ -92,9 +92,10 @@ def main():
         data = f.read()
     try:
         # Asign tuple directly with var1, var2 = do()
-        result = do[INPUT_OP](INPUT_KEY, data)
-        encrypted = result[0]
-        key = result[1]
+        # result = do[INPUT_OP](INPUT_KEY, data)
+        # encrypted = result[0]
+        # key = result[1]
+        encrypted, key = do[INPUT_OP](INPUT_KEY, data)
     except Exception as e:
         print(str(e))
     else:
