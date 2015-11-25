@@ -1,6 +1,8 @@
 # CryptIt
 Easy Encryption from contextmenu
 
+WARNING!! THIS PROGRAM WILL IRREVERSABLY ENCRYPT THE FILES YOU CHOOSE. PLEASE REMEMBER YOUR PASSWORD.
+
 Instructions:
 
 <p>Tested on Python 3.4.3. Needs PyCrypto to work (install with e.g. pip install pycrypto)</p>
