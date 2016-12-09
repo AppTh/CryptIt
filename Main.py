@@ -26,7 +26,7 @@ def encrypt(key):
         cipher.encrypt(INPUT_FILE)
         return key
     else:
-        print("Encrytpion aborted, WHY U CHNG UR MIND FOOL???.")
+        print("Encrytpion aborted.")
 
 def decrypt(key):
 
