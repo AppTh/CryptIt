@@ -44,7 +44,6 @@ def decrypt(key):
         return key
 
 
-
 if __name__ == '__main__':
 
     INPUT_OP = sysarg(1)
